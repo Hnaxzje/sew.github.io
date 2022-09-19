@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    font-family: 'Poppins', Sans-serif;
+    font-size: 16px;
+    font-weight: 700px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ----- ----- ----- HEADER ----- ----- ----- */
+
+header {
+    background: #0e0e0e;
+}
+
+header .menu {
+    margin: 40px 0;
+    text-align: right;
+}
+header .h2 {
+    color: #337ab7;
+    font-weight: bold;
+   
+    
+  }
+header .swiftmainnav {
+    margin: -80px 0px;
+    color: rgb(255, 255, 255);
+    float: left;
+    top:15px;
+    font-size: 1.9em;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 5px;
+    transition: all .3s ease;
+}
+
+header .menu a {
+    margin: 0 20px;
+    color: rgb(255, 255, 255);
+    ;
+    padding-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+    transition: all .3s ease;
+}
+
+header .menu a:hover {
+    color: white;
+    border-bottom: 2px solid rgb(0, 247, 255);
+    ;
+}
+
+header .container-text {
+    display: flex;
+    margin: 0px 30px;
+}
+
+header .container-text img {
+    top: 30%;
+    transform: perspective(1250px) rotateY(-8deg) rotateX(8deg) rotateZ(-1deg);
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.8));
+    filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.5));
+}
+
+header .container-text .swiftname {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+header .container-text .about {
+    color: rgb(209, 210, 212);
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+header .container-text .downloadbtn a {
+    color: rgb(0, 225, 255);
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 32%;
+    margin: 125px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
+    padding: 10px 15px;
+    font-size: 18px;
+    box-shadow: 0 0 10px #000000;
+    transition: all 0.5s ease;
+    font-weight: 700;
+}
+
+header .container-text .downloadbtn a:hover {
+    background-color: rgb(55, 59, 59);
+    box-shadow: 0 0 20px #00c3ff;
+    color: rgb(255, 255, 255);
+}
+
+/* ----- ----- ----- Main ----- ----- ----- */
+
+main {
+    background-color: #131313
+}
+
+main #features {
+    background-color: #131313;
+    padding: 30px;
+}
+
+main .features-text {
+    color: rgb(209, 210, 212);
+    margin-left: 380px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding: 10px;
+}
+
+main .container-features .feature {
+    background-color: #171717;
+    border-radius: 20px;
+    margin: 10px;
+    width: 300px;
+    float: left;
+    height: 300px;
+    text-align: center;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+main .container-features .feature:hover p {
+    color: rgb(163, 163, 163)
+}
+
+main .container-features .feature:hover .icon {
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    width: 2.1em;
+    height: 2em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+main .container-features .feature .icon {
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    background-color: rgb(27, 189, 201);
+    border-radius: 10px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+main .container-features .feature:hover {
+    background-color: #333333;
+}
+
+main .container .footertext {
+    font-size: 15px;
+    color: white;
+    margin-left: 400px;
+}
+
+main .container .footertext .origins {
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: rgb(0, 225, 255);
+}
+
+/* ----- ----- ----- MEDIA QUERIES ----- ----- ----- */
+
+@media screen and (max-width: 800px) {
+    main .footertext {
+        opacity: 0%;
+    }
+    header .menu {
+        text-align: center;
+    }
+    header .swiftmainnav {
+        opacity: 0%;
+    }
+    header .container-text img {
+        opacity: 0%;
+    }
+    header .container-text {
+        padding: 0%;
+        right: 10px;
+        text-align: center;
+    }
+    header .container-text .swiftname {
+        text-align: center;
+        padding: 90px;
+    }
+    header .downloadbtn {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        padding: 10px 15px;
+    }
+    main .footertext {
+        opacity: 0%;
+    }
+    main .features-text {
+        opacity: 0%;
+    }
+    @media screen and(max-width:500px) {
+        * {
+            font-size: 25px;
+        }
+    }
+}
